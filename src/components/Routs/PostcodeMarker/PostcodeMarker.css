@@ -1,0 +1,25 @@
+.pint {
+  position: relative;
+
+  width: 0;
+  height: 0;
+}
+
+
+.point__name {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: min-content;
+  padding: 8px;
+
+  font-size: .6rem;
+  font-weight: 700;
+  color: #fff;
+
+  background-color: rgba(0,0,0,.6);
+  border-radius: 8px;
+
+  transform: translateX(-50%) translateY(-100%);
+}
