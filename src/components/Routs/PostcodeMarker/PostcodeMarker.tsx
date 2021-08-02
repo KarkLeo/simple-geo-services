@@ -33,7 +33,7 @@ const [points, setPoints] = useState<Point[]>([])
   }, [coordinates, setPoints])
 
   return <>
-    {points.map( i => <Marker longitude={i.longitude} latitude={i.latitude}>
+    {points.map( i => <Marker key={i.longitude + i.latitude} longitude={i.longitude} latitude={i.latitude}>
      <div className='pint'><div className='point__name'>{i.text}</div></div>
     </Marker>)}
   </>
